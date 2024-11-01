@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.first img {
+    width: 800px;
+}
+
+.container  {
+    background-color: white;
+    padding: 50px;
+    display: grid;
+    place-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    word-spacing: 15px;
+}
+
+.first {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+    column-gap: 10px;
+}
+
+.info p {
+    padding-top: 30px;
+}
+
+.info button {
+    background-color: #ff5c5c;
+    border: none;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.second {
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.info h1 {
+    font-size: 60px;
+}
+
+.info p {
+    font-size: 20px;
+    color: gray;
+}
+.one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding-top: 50px;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+}
+
+.im {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.im h1 {
+    color: #ff5c5c;
+}
+
+@media screen and (max-width: 450px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: grid;
+        place-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 215px;
+    }
+
+    .second {
+        margin-top: 50px;
+    }
+
+    .first img {
+        content: url("image-web-3-mobile.jpg");
+        width: 500px;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header a {
+        display: none;
+    }
+
+    header nav {
+        content: url("icon-menu.svg");
+        padding-left: 400px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .im {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .info button {
+        margin-top: 20px;
+    }
+
+}
